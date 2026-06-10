@@ -1,0 +1,15 @@
+# Render deployment config for Veritas Forensics
+# https://render.com/docs/infrastructure-as-code
+
+services:
+  - type: web
+    name: veritas-forensics
+    runtime: node
+    repo: https://github.com/hotspur23/veritas-forensics
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production

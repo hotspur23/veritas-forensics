@@ -484,7 +484,7 @@
               </div>
               <div class="detail">
                 <h4>Office Address</h4>
-                <p>[11937 W 119th St #121, Overland Park, KS 66213]</p>
+                <p id="contact-address">11937 W 119th St #121, Overland Park, KS 66213</p>
               </div>
             </div>
 
@@ -496,7 +496,7 @@
               </div>
               <div class="detail">
                 <h4>Phone</h4>
-                <p>[Phone Number]</p>
+                <p id="contact-phone">[Phone Number]</p>
               </div>
             </div>
 
@@ -508,7 +508,7 @@
               </div>
               <div class="detail">
                 <h4>Email</h4>
-                <p>[wrexham23@icloud.com]</p>
+                <p id="contact-email">wrexham23@icloud.com</p>
               </div>
             </div>
           </div>
@@ -518,7 +518,7 @@
           <h3>Send a Message</h3>
           <p>Fill out the form below and a member of our team will respond promptly.</p>
 
-          <form novalidate>
+          <form novalidate action="/api/contact" method="POST">
             <div class="form-group">
               <label for="name">Full Name *</label>
               <input type="text" id="name" name="name" placeholder="Your full name" required>
@@ -596,9 +596,9 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><a href="#contact">[11937 W 119th St #121, Overland Park, KS 66213]</a></li>
-            <li><a href="#contact">[816-673-5510]</a></li>
-            <li><a href="#contact">[wrexham23@icloud.com]</a></li>
+            <li id="footer-address"><a href="#contact">11937 W 119th St #121, Overland Park, KS 66213</a></li>
+            <li id="footer-phone"><a href="tel:+18166735510">816-673-5510</a></li>
+            <li id="footer-email"><a href="mailto:wrexham23@icloud.com">wrexham23@icloud.com</a></li>
           </ul>
         </div>
       </div>
@@ -610,6 +610,7 @@
   </footer>
 
   <!-- JavaScript -->
+  <script src="js/config.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

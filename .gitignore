@@ -13,3 +13,9 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Runtime data (form submissions, etc.)
+_data/
+
+# Runtime lock files
+package-lock.json
